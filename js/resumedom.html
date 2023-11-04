@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+</head>
+<body>
+    <h1 id="name"></h1>
+    <p id="email"></p>
+    <img id="imgg" src="../andrew.jpeg" alt="" style="border-radius: 100px; width: 100px; height: 100px;">
+    <hr style="border: 1px solid black;" >
+    <p id="carrer"></p>
+    <p id="careerObjective"></p>
+    <hr style="border: 1px solid black"></hr>
+    <h3 id="education"></h3>
+    <h4 id="btech"></h4>
+    <p id="eee"></p>
+    <!-- <hr style="border: 1px solid black"></hr> -->
+    <script>
+        let a = document.getElementById("name");
+        a.innerHTML="Ganta Balaji Prabhu";
+        a.style.color="red"
+        a.style.textAlign="center"
+        let b =document.getElementById("imgg");
+        let c = document.getElementById("email")
+        c.innerHTML="Email:gantabalajiprabhu15@gmail.com"
+        c.style.textAlign="center"
+        let d = document.getElementById("carrer");
+        d.innerHTML="<b><u>CARRER OBJECTIVE:</u></b>"
+        let e = document.getElementById("careerObjective");
+        e.innerHTML = "Seeking an opportunity in the engineering industry, where I can leverage my technical skills, adaptability, and passion for innovation to contribute to projects, learn from experienced professionals, and develop a successful career.e a responsible career opportunity to fully utilize my training and skills, while making a significant contribution to the success of the company.";
+        let f = document.getElementById("education")
+        f.innerHTML="Education"
+        let g = document.getElementById("btech")
+        g.innerHTML="Narayana Engneering collage - Nellore"
+        let h = document.getElementById("eee")
+        h.innerHTML="Electrial and Electronics Engneering - 2020-23"
+        let i = document.createElement("hr");
+        h.appendChild(i);
+        i.style.borderBottom = "1px solid black"
+        let j=document.createElement("h3")
+        j.innerText="Techincal skills:"
+        h.appendChild(j);
+        let k=document.createElement("li")
+        k.innerText="HTML & CSS"
+        h.appendChild(k);
+        let l=document.createElement("li")
+        l.innerText="Javascript"
+        k.appendChild(l);
+        let m = document.createElement("hr");
+        l.appendChild(m);
+        m.style.borderBottom = "1px solid black"
+    </script>
+
+</body>
+</html>
