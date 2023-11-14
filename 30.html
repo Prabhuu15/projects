@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+     body{
+        background-image: url(./th.jpeg);
+        background-repeat: no-repeat;background-size:50%;
+        background-position: top center;
+
+         /* transform: translate(20px,5px); */
+
+     }
+
+     .one{
+        background-image: repeating-conic-gradient(white 0deg 10deg, blue 10deg 20deg);
+        height: 150px; 
+        width: 150px;
+        border-radius: 50%;
+        background-color: red;
+        animation-duration: 5s;
+        animation-name:rotate;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+        position: relative;
+        top: 200px;
+        left: 680px;
+        /* transform: translate(50px,100px); */
+
+
+     }
+     @keyframes rotate{
+        100%{rotate: 360deg;}
+     }
+     .tw{
+        background-color: black;
+        height: 50px;
+        width: 5px;
+        rotate: 60deg;
+     }
+     
+    </style>
+
+</head>
+<body>
+    <div class="one"></div>
+    <h1 class="tw"></h1>
+</body>
+</html>

@@ -512,3 +512,116 @@ while (num>0){
 
 }
 console.log(k)
+
+
+// 33. Count occurrence of number:
+// 			Input: [1,6,3,1,5,9,7,2,1,9,3,7,8,9,10] , no find=7
+// 			Output: 7 present 2 times.
+
+
+let a = [1, 6, 3, 1, 5, 9, 7, 2, 1, 9, 3, 7, 8, 9, 10];
+let numberToFind = 7;
+let count = 0;
+
+for (let i = 0; i < a.length; i++) {
+    if (a[i] === numberToFind) {
+        count++;
+    }
+}
+
+console.log(`${numberToFind} present ${count} times.`);
+
+
+// Write a function that converts an object into an array, where each element represents a key-value pair in the form of an array.
+
+// Examples :
+// toArray({ a: 1, b: 2 }) ➞ [["a", 1], ["b", 2]]
+// toArray({ shrimp: 15, tots: 12 }) ➞ [["shrimp", 15], ["tots",12]]
+// toArray({}) ➞ []
+
+function toArray(obj) {
+  var result = [];
+
+  for (var key in obj) {
+       
+      result.push([key, obj[key]]);
+      
+  }
+
+  return result;
+}
+
+
+console.log(toArray({ a: 1, b: 2 })); 
+console.log(toArray({ shrimp: 15, tots: 12 })); 
+console.log(toArray({})); 
+
+
+ let MyObjects= ({ a: 1, b: 2 })
+let b = Object.entries(MyObjects);
+console.log(b) 
+
+// Create a function that takes two numbers as arguments (num, length) and returns an array of multiples of num until the array length reaches length.
+// Examples :
+// arrayOfMultiples(7, 5) ➞ [7, 14, 21, 28, 35]
+// arrayOfMultiples(12, 10) ➞ [12, 24, 36, 48, 60, 72, 84, 96, 108, 120]
+// arrayOfMultiples(17, 6) ➞ [17, 34, 51, 68, 85, 102]
+
+
+function arrayOfMultiples(num, length) {
+  var result = [];
+
+  for (var i = 1; i <= length; i++) {
+      result.push(num * i);
+  }
+
+  return result;
+}
+
+console.log(arrayOfMultiples(7, 5));
+console.log(arrayOfMultiples(12, 10));
+console.log(arrayOfMultiples(17, 6)); 
+
+
+// Create the function that takes an array with objects and returns the sum of people's budgets.
+// Examples :
+// getBudgets([
+//   { name: "John", age: 21, budget: 23000 },
+//   { name: "Steve",  age: 32, budget: 40000 },
+//   { name: "Martin",  age: 16, budget: 2700 }
+// ]) ➞ 65700
+
+
+
+const getBudgets = ([
+  { name: "John", age: 21, budget: 23000 },
+  { name: "Steve",  age: 32, budget: 40000 },
+  { name: "Martin",  age: 16, budget: 2700 }
+])
+let b = getBudgets.reduce((a,b)=>{
+    return a+b.budget
+  
+},0)
+  console.log(b)
+
+
+
+function getTotalBudget(budgets) {
+  let total = 0;
+
+  for (let i = 0; i < budgets.length; i++) {
+    total += budgets[i].budget;
+  }
+
+  return total;
+}
+
+const getBudgets = [
+  { name: "John", age: 21, budget: 23000 },
+  { name: "Steve", age: 32, budget: 40000 },
+  { name: "Martin", age: 16, budget: 2700 }
+];
+
+let totalBudget = getTotalBudget(getBudgets);
+console.log(totalBudget);
+

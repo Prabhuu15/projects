@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    box-sizing: border-box;
+}
+.container {
+    background-color: rgb(58, 110, 93);
+    width: 100%;
+    height: 100vh;
+}
+.todo-app{
+    background-color: white;
+    width: 100%;
+    max-width: 600px;
+    position: absolute;
+    top: 100px;
+    left: 35%;
+}
+#row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50px;  
+    padding-left: 20px;
+    margin: 25px;
+    /* box-sizing: border-box; */
+}
+input{
+    color:black;
+    padding: 10px;
+    flex: 1;
+    border: 1px solid black;
+    border-radius: 50px;
+}
+#addbtn {
+    background-color: rgb(58, 110, 93);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+ul  li {
+    list-style-type: none;
+    font-size: 15px;
+    padding: 20px 8px 12px 65px;
+}
+button{
+    margin-left: 400px;
+}
+/* Styling for the container */
+.container {
+    background-color: rgb(58, 110, 93);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Styling for the to-do app */
+.todo-app {
+    background-color: white;
+    width: 100%;
+    max-width: 800px;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for the heading */
+.todo-app h2 {
+    text-align: center;
+    color: rgb(58, 110, 93);
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Styling for the input and button container */
+#row {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; 
+    background-color: rgb(255, 255, 255);
+    border-radius: 30px;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+}
+
+#inputbox {
+    border: 1px solid #151414;
+    border-radius: 5px;
+    padding-left: 10px;
+    flex: 3; /* Increase the flex value to make it wider */
+    margin-right: 10px;
+    outline: none;
+}
+
+
+/* Styling for the "ADD" button */
+#row button {
+    background-color: rgb(58, 110, 93);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#row button:hover {
+    background-color: #367c63;
+}
+
+/* Styling for the task list */
+#listsss {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Styling for individual task items */
+#listsss li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+/* Styling for the "Delete" button within each task item */
+#listsss button {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+#listsss button:hover {
+    background-color: #d32f2f;
+}
